@@ -4,7 +4,7 @@ Simple tool to generate documents (based on jinja templates) into different indi
 
 usage:  docgen.py <profile diretory> init|run|reset|stats|gendoc
   
-  <profile directory> = directory containing profile.json and other index and data templates
+  profile directory = directory containing profile.json and other index and data templates
   
   init = one time initialization of indices defined in the profile
   
