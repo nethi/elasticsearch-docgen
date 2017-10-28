@@ -1,0 +1,10 @@
+{
+    "es_url" : "http://localhost:9200/",
+    "doc_count": 10000,
+    "doc_type": "vertex",
+
+    "indices":  [
+        "doctest1", 
+        "doctest2"
+    ]
+}

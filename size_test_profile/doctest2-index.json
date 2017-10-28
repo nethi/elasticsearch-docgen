@@ -1,0 +1,46 @@
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 1,
+            "number_of_replicas" : 0,
+            "codec": "best_compression"
+        }
+    },
+    
+    "mappings" : {
+        "vertex": {
+            "_all": {
+                "enabled": false
+            },
+            "properties": {
+                "param1": {
+                    "type": "float"
+                },
+                "~elementid": {
+                    "type": "keyword"
+                },
+                "~entrystatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "~label": {
+                    "type": "keyword"
+                },
+                "~modificationtime": {
+                    "type": "long"
+                },
+                "~nextmodificationtime": {
+                    "type": "long"
+                }
+            }
+        }
+
+
+    }
+
+}

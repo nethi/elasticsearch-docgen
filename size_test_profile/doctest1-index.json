@@ -1,0 +1,1242 @@
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 1,
+            "number_of_replicas" : 0,
+            "codec" : "best_compression"
+        }
+    },
+
+    "mappings" : {
+        "vertex": {
+            "_all": {
+                "enabled": false
+            },
+            "properties": {
+                "HALastResetReason": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "HAPrimaryPowerIndex": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "HAPrimaryPowerStatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "HASecondaryPowerIndex": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "HASecondaryPowerStatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "WANScore": {
+                    "type": "float"
+                },
+                "__count__": {
+                    "type": "long"
+                },
+                "__timestamp": {
+                    "type": "long"
+                },
+                "__type__": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "aaaBucket": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "aaaServerIp": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "accessBadCount": {
+                    "type": "float"
+                },
+                "accessFairCount": {
+                    "type": "float"
+                },
+                "accessGoodCount": {
+                    "type": "float"
+                },
+                "accessScore": {
+                    "type": "float"
+                },
+                "accessTotalCount": {
+                    "type": "float"
+                },
+                "apGroup": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "apName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "ap_cpu_threshold": {
+                    "type": "float"
+                },
+                "ap_cpu_utilization": {
+                    "type": "float"
+                },
+                "ap_mem_threshold": {
+                    "type": "float"
+                },
+                "ap_memory_utilization": {
+                    "type": "float"
+                },
+                "ap_radio_air_quality_stats_max": {
+                    "type": "float"
+                },
+                "ap_radio_channel_stats_max": {
+                    "type": "float"
+                },
+                "ap_radio_frequency_stats_max": {
+                    "type": "float"
+                },
+                "ap_radio_interference_stats_max": {
+                    "type": "float"
+                },
+                "ap_radio_noise_stats_max": {
+                    "type": "float"
+                },
+                "ap_radio_utilization_stats_max": {
+                    "type": "float"
+                },
+                "ap_up_down": {
+                    "type": "float"
+                },
+                "assocBucket": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "attemptCountBucket": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "attemptCountTotal": {
+                    "type": "float"
+                },
+                "authReasonCode": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "authStatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "averageAssocDuration": {
+                    "type": "float"
+                },
+                "averageAuthDuration": {
+                    "type": "float"
+                },
+                "averageConnectedScore": {
+                    "type": "float"
+                },
+                "averageDatarate": {
+                    "type": "float"
+                },
+                "averageDhcpDuration": {
+                    "type": "float"
+                },
+                "averageFailureDuration": {
+                    "type": "float"
+                },
+                "averageHealthScore": {
+                    "type": "float"
+                },
+                "averageOnboardingScore": {
+                    "type": "float"
+                },
+                "averageRssi": {
+                    "type": "float"
+                },
+                "averageRunDuration": {
+                    "type": "float"
+                },
+                "averageSnr": {
+                    "type": "float"
+                },
+                "averageWebAuthDuration": {
+                    "type": "float"
+                },
+                "avgAssocTime": {
+                    "type": "float"
+                },
+                "avgAuthTime": {
+                    "type": "float"
+                },
+                "avgDhcpTime": {
+                    "type": "float"
+                },
+                "avgFailureTime": {
+                    "type": "float"
+                },
+                "avgInputErrors": {
+                    "type": "float"
+                },
+                "avgInputUtil": {
+                    "type": "float"
+                },
+                "avgOutputErrors": {
+                    "type": "float"
+                },
+                "avgOutputUtil": {
+                    "type": "float"
+                },
+                "avgTotalTime": {
+                    "type": "float"
+                },
+                "avg_clientCountPerRadio": {
+                    "type": "float"
+                },
+                "avg_cpu": {
+                    "type": "float"
+                },
+                "avg_envtemp": {
+                    "type": "float"
+                },
+                "avg_memory": {
+                    "type": "float"
+                },
+                "band": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "borderBadCount": {
+                    "type": "float"
+                },
+                "borderFairCount": {
+                    "type": "float"
+                },
+                "borderGoodCount": {
+                    "type": "float"
+                },
+                "borderScore": {
+                    "type": "float"
+                },
+                "borderTotalCount": {
+                    "type": "float"
+                },
+                "channel": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "channelAirQualityScore": {
+                    "type": "float"
+                },
+                "channelNoiseScore": {
+                    "type": "float"
+                },
+                "channelWidth": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "clientCount": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "clientCountGood": {
+                    "type": "float"
+                },
+                "clientCountTotal": {
+                    "type": "float"
+                },
+                "connectedTime": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "coreBadCount": {
+                    "type": "float"
+                },
+                "coreFairCount": {
+                    "type": "float"
+                },
+                "coreGoodCount": {
+                    "type": "float"
+                },
+                "coreScore": {
+                    "type": "float"
+                },
+                "coreTotalCount": {
+                    "type": "float"
+                },
+                "count": {
+                    "type": "float"
+                },
+                "cpBadCount": {
+                    "type": "float"
+                },
+                "cpFairCount": {
+                    "type": "float"
+                },
+                "cpGoodCount": {
+                    "type": "float"
+                },
+                "cpScore": {
+                    "type": "float"
+                },
+                "cpTotalCount": {
+                    "type": "float"
+                },
+                "cpuScore": {
+                    "type": "float"
+                },
+                "crashScore": {
+                    "type": "float"
+                },
+                "deviceCategory": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "device_avail": {
+                    "type": "float"
+                },
+                "dhcpBucket": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "dhcpReasonCode": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "dhcpServerIp": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "dhcpStatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "distributionBadCount": {
+                    "type": "float"
+                },
+                "distributionFairCount": {
+                    "type": "float"
+                },
+                "distributionGoodCount": {
+                    "type": "float"
+                },
+                "distributionScore": {
+                    "type": "float"
+                },
+                "distributionTotalCount": {
+                    "type": "float"
+                },
+                "dpScore": {
+                    "type": "float"
+                },
+                "errorScore": {
+                    "type": "float"
+                },
+                "fabricName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "flapScore": {
+                    "type": "float"
+                },
+                "freeMbufScore": {
+                    "type": "float"
+                },
+                "freeTimerScore": {
+                    "type": "float"
+                },
+                "frequency": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "groupId": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "groupName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "groupType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "hostName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "hostOS": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "interferenceScore": {
+                    "type": "float"
+                },
+                "ipAddr": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "ipType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "isHost": {
+                    "type": "boolean"
+                },
+                "latitude": {
+                    "type": "float"
+                },
+                "longitude": {
+                    "type": "float"
+                },
+                "mac": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "macAddr": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "macAddress": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "managementIpAddr": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "maxNearestApMaxRssi": {
+                    "type": "float"
+                },
+                "maxRssi": {
+                    "type": "float"
+                },
+                "maxRssiDelta": {
+                    "type": "float"
+                },
+                "memoryScore": {
+                    "type": "float"
+                },
+                "minRssiDelta": {
+                    "type": "float"
+                },
+                "mode": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "name": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "numBytes": {
+                    "type": "long"
+                },
+                "numPackets": {
+                    "type": "long"
+                },
+                "nwDeviceFamily": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwDeviceId": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwDeviceMgmtIp": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwDeviceName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwDeviceRole": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwDeviceType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwElementType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwGroupName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwGroupType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwInterfaceIp": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "nwInterfaceName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "onBoardingBucket": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "opState": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "operStatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "osCategory": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "othersBadCount": {
+                    "type": "float"
+                },
+                "othersFairCount": {
+                    "type": "float"
+                },
+                "othersGoodCount": {
+                    "type": "float"
+                },
+                "othersScore": {
+                    "type": "float"
+                },
+                "othersTotalCount": {
+                    "type": "float"
+                },
+                "outdoorAP": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "overallBadCount": {
+                    "type": "float"
+                },
+                "overallFairCount": {
+                    "type": "float"
+                },
+                "overallGoodCount": {
+                    "type": "float"
+                },
+                "overallScore": {
+                    "type": "float"
+                },
+                "overallTotalCount": {
+                    "type": "float"
+                },
+                "packetPoolScore": {
+                    "type": "float"
+                },
+                "platformId": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "protocol": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "redundancyMode": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "redundancyPeerState": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "redundancyState": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "redundancyUnit": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "role": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "roleName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "roleType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "rootCause": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "routerBadCount": {
+                    "type": "float"
+                },
+                "routerFairCount": {
+                    "type": "float"
+                },
+                "routerGoodCount": {
+                    "type": "float"
+                },
+                "routerScore": {
+                    "type": "float"
+                },
+                "routerTotalCount": {
+                    "type": "float"
+                },
+                "scoreLabel": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "serverIp": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "serviceName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "servicePort": {
+                    "type": "long"
+                },
+                "siteGroup": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "siteHierarchy": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "siteId": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "siteType": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "slot": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "slotId": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "softwareVersion": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "ssid": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "status": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "subMode": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "sum_clientCountPerRadio": {
+                    "type": "float"
+                },
+                "sysname": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "systemScore": {
+                    "type": "float"
+                },
+                "targetURI": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "tcpConnScore": {
+                    "type": "float"
+                },
+                "trafficDirection": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "txPower": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "uniqueApCount": {
+                    "type": "float"
+                },
+                "upLinkScore": {
+                    "type": "float"
+                },
+                "userEndPointIp": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "userId": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "utilization": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "utilizationScore": {
+                    "type": "float"
+                },
+                "vlan": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "webAuthBucket": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "wirelessBadCount": {
+                    "type": "float"
+                },
+                "wirelessFairCount": {
+                    "type": "float"
+                },
+                "wirelessGoodCount": {
+                    "type": "float"
+                },
+                "wirelessScore": {
+                    "type": "float"
+                },
+                "wirelessTotalCount": {
+                    "type": "float"
+                },
+                "wlcName": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "wlcUpTimeScore": {
+                    "type": "float"
+                },
+                "wlc_ap_count": {
+                    "type": "float"
+                },
+                "wlc_ap_inUseCount": {
+                    "type": "float"
+                },
+                "wlc_ap_maxCount": {
+                    "type": "float"
+                },
+                "wlc_avg_memory_util": {
+                    "type": "float"
+                },
+                "wlc_client_count": {
+                    "type": "float"
+                },
+                "wlc_global_cpu_avg": {
+                    "type": "float"
+                },
+                "wlc_min_memory_util": {
+                    "type": "float"
+                },
+                "wqePoolScore": {
+                    "type": "float"
+                },
+                "param1": {
+                    "type": "float"
+                },
+                "param2": {
+                    "type": "float"
+                },
+                "param3": {
+                    "type": "float"
+                },
+                "param4": {
+                    "type": "float"
+                },
+                "param5": {
+                    "type": "float"
+                },
+                "param6": {
+                    "type": "float"
+                },
+                "param7": {
+                    "type": "float"
+                },
+                "param8": {
+                    "type": "float"
+                },
+                "param9": {
+                    "type": "float"
+                },
+                "param10": {
+                    "type": "float"
+                },
+                "~elementid": {
+                    "type": "keyword"
+                },
+                "~entrystatus": {
+                    "fields": {
+                        "keyword": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    },
+                    "type": "text"
+                },
+                "~label": {
+                    "type": "keyword"
+                },
+                "~modificationtime": {
+                    "type": "long"
+                },
+                "~nextmodificationtime": {
+                    "type": "long"
+                }
+            }
+        }
+
+
+    }
+}

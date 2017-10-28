@@ -1,0 +1,8 @@
+{
+    "~elementid": "{{ doc_id}}", 
+    "~entrystatus": "new",
+    "~label" : "{{ ["Interface", "NWInterface", "Host", "AP", "Application"] |random}}",
+    "~modificationtime" : {{ time_now}},
+    "~nextmodificationtime" : {{ time_now}},
+    "param1" : {{rand_value}}
+} 
